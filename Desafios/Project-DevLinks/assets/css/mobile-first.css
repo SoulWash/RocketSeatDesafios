@@ -1,0 +1,74 @@
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black url(../image/bg-mobile.jpg) no-repeat top center/ cover;
+}
+
+#conteiner {
+    width: 360px;
+    margin: 56px auto 0px;
+    padding: 0 24px;
+}
+
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img{
+    width: 112px;
+    border-radius: 50%;
+}
+#profile img:hover{
+    box-shadow: inset 1px 1px 1px 2px rgba(255, 255, 255, 0.979),
+    1px 1px 1px 2px rgba(255, 255, 255, 0.11);
+}
+
+#profile p{
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+#profile p a:hover{
+    color: #00ffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 16px 24px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    font-weight: 500;
+
+    transition: .3s;
+}
+ul li a:hover{
+    background: rgba(255, 255, 255, 0.24);
+    box-shadow: inset 1px 1px 1px 2px white,
+    1px 1px 1px 2px white;
+}

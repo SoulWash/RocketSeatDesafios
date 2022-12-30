@@ -1,2 +1,2 @@
 # RocketSeatDesafios
- Desafios propostos da plataforma da RocketSeat
+ Desafios e projetos propostos da plataforma da RocketSeat
