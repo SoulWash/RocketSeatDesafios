@@ -31,10 +31,12 @@
 
 body {
     background: black var(--bg-url) no-repeat top center/ cover;
+    height: 90vh;
 }
 
 #conteiner {
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     margin: 56px auto 0px;
     padding: 0 24px;
 }
@@ -93,6 +95,14 @@ a {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+
+    animation: slide-out .235s;
+
+    transition: outline .035s;
+}
+
+#switch button:hover{
+    outline: 8px solid var(--bg-a-color);
 }
 
 #switch span{
@@ -110,8 +120,7 @@ a {
 
 
 .light #switch button{
-    right: 0;
-    left: initial;
+    animation: slide-in .235s forwards;
 }
 
 ul{
@@ -166,3 +175,20 @@ footer {
     text-align: center;
 }
 
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+}
