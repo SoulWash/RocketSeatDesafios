@@ -32,6 +32,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projetos e disafios propostos pela plataforma da RocketSeat para melhoria da capaciadade de 'webinnar'.
 
+<a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/Project-DevLinks/">DevLinks</a>
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
