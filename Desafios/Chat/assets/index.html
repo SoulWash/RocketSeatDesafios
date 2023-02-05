@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <title>Chat</title>
+</head>
+<body>
+    <div id="app">
+        <div id="top">
+            <div id="user-info">
+                <img src="https://randomuser.me/api/portraits/women/50.jpg" alt="Mulher asiatica com cabelo preto e longo , de gorro preto e óculos preto">
+                <div id="user-status">
+                    <strong>Cecilia Sassaki</strong>
+                    <div class="status">Online</div>
+                </div>
+            </div>
+
+            <div id="close-chat">
+                <i class="bi bi-x"></i>
+            </div>
+        </div>
+        <div id="messages">
+            <div id="last-seen">Hoje 09:35</div>
+
+            <div class="messages">
+                <div class="message">
+                    <div class="top">Cecilia - <span>09:35</span></div>
+                    <div class="body">Tive uma ideia incrível para um projeto! 😍</div>
+                </div>
+
+                <div class="message you">
+                    <div class="top">Você - <span>10:14</span></div>
+                    <div class="body">Sério? Me conta mais.😀</div>
+                </div>
+
+                <div class="message">
+                    <div class="top">Cecilia - <span>10:27</span></div>
+                    <div class="body">E se a gente juntar a galera famosa em um casarão, confinados durante uns meses? Sem notícias do mundo de fora. 🤩</div>
+                </div>
+
+                <div class="message you">
+                    <div class="top">Você - <span>11:02</span></div>
+                    <div class="body">E podemos dar um prémio para a pessoa que ficar na casa até o final do programa. 🤩</div>
+                </div>
+                
+                <div class="message you">
+                    <div class="top">Você - <span>11:05</span></div>
+                    <div class="body">Damos um gostinho no horário da TV aberta. Então podemos cobrar para as pessoas assitirem 24 horas ao vivo 🤑🤑</div>    
+                </div>
+
+                <div class="message">
+                    <div class="top">Cecilia - <span>11:07</span></div>
+                    <div class="body">Vamos fazer! 😎💲💲💲</div>
+                </div>
+
+                <div class="message you">
+                    <div class="top">Você - <span>11:08</span></div>
+                    <div class="body">Na segunda faremos uma reunião com a equipe para fazer os alinhamentos. 😉</div>    
+                </div>
+
+                <div class="message">
+                    <div class="top">Cecilia - <span>11:21</span></div>
+                    <div class="body">Pronto, na segunda vou dá mais detalhes sobre. bjs😘 Bom descanso!😪</div>
+                </div>
+            </div>
+        </div>
+        <form id="bottom">
+                <input type="text" placeholder="Digite sua mensagem">
+                <button><i class="bi bi-send-fill"></i></button>
+        </form>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
