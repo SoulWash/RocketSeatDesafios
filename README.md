@@ -32,8 +32,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projetos e disafios propostos pela plataforma da RocketSeat para melhoria da capaciadade de 'webinnar'.
 
-<a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/Project-DevLinks/">DevLinks</a>
+<a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/Project-DevLinks/">DevLinks</a><br>
 
+<a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/ELNightmare" target="_black">Page EndLess Nightmare</a><br>
+<a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/ELNightmare" target="_black">Travel Expert</a><br>
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
