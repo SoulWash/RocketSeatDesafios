@@ -89,7 +89,15 @@ a {
 ul li:nth-child(2){
     background-color: #FFC700;
     text-align: center;
+    border: none;
+    transition: .3s ease-in-out;
 }
+
+ul li:nth-child(2):hover{
+    transform: scale(1.1);
+    border-radius: 8px;
+}
+
 
 a.play{
     text-decoration: none;
