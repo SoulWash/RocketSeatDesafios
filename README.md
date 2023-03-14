@@ -35,7 +35,7 @@ Projetos e disafios propostos pela plataforma da RocketSeat para melhoria da cap
 <a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/Project-DevLinks/">DevLinks</a><br>
 
 <a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/ELNightmare" target="_black">Page EndLess Nightmare</a><br>
-<a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/ELNightmare" target="_black">Travel Expert</a><br>
+<a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/TravelExpert" target="_black">Travel Expert</a><br>
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
