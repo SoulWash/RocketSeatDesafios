@@ -61,8 +61,7 @@ body * {
 }
 
 #keyboard {
-    margin-top: 26px;
-    margin-inline: 32px;
+    padding: 26px 32px 32px;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
