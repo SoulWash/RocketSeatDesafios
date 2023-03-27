@@ -58,6 +58,8 @@ header p {
   display: flex;
   justify-content: center;
   gap: 40px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .card {
