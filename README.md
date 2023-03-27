@@ -36,6 +36,8 @@ Projetos e disafios propostos pela plataforma da RocketSeat para melhoria da cap
 <a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/ELNightmare" target="_black">Page EndLess Nightmare</a><br>
 <a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/TravelExpert" target="_black">Travel Expert</a><br>
 <a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/HRecipes" target="_black">Healthy Recipes</a><br>
+<a href="https://soulwash.github.io/RocketSeatDesafios/DesafioPlanos
+" target="_black">Pricing Table</a><br>
 
 ## :memo: Licença
 

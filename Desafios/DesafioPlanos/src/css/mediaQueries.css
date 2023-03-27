@@ -1,0 +1,14 @@
+@media (max-width: 910px){
+    .page {
+        padding: 5px;
+    }
+    header {
+        margin-top: 50px;
+    }
+    main .cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
