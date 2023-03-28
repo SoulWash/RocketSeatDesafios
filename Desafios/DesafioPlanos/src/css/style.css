@@ -5,12 +5,15 @@
 }
 
 :root {
+  --white:#ffffff;
   --yellow: #ffcc29;
   --blue: #1d539e;
   --gray: #828799;
   --page-background: #f9fbfc;
 
   font-size: 62.5%;
+  --font-titule: clamp(2.5rem,1rem + 5vw,4.8rem);
+  --font-paragrafo:clamp(1rem,0.3rem + 2vw,1.8rem);
 }
 
 body {
@@ -38,19 +41,19 @@ header::before {
 
 header {
   margin: 100px auto 65px;
-  color: #ffffff;
+  color: var(--white);
 }
 
 header h1 {
   margin-bottom: 20px;
   font-weight: 700;
-  font-size: 4.8rem;
+  font-size: var(--font-titule);
   line-height: 6.5rem;
 }
 
 header p {
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: var(--font-paragrafo);
   line-height: 2.5rem;
 }
 
@@ -63,7 +66,7 @@ header p {
 }
 
 .card {
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
   max-width: 355px;
   height: 470px;
@@ -97,7 +100,7 @@ header p {
   padding: 8px 24px;
   background-color: var(--blue);
   border-radius: 20px;
-  color: #ffffff;
+  color: var(--white);
 }
 
 .card-main {
@@ -168,7 +171,7 @@ button {
 }
 button:hover {
   background-color: var(--blue);
-  color: #fff;
+  color: var(--white);
 }
 
 div.cards .card-main button.first {
@@ -180,3 +183,5 @@ div.cards .card-main button.second {
 div.cards .card-main button.third {
   margin-top: 59px;
 }
+
+

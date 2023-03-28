@@ -1,9 +1,10 @@
 @media (max-width: 910px){
+    :root {
+        --yellow: #fb8c38;
+        --blue: #751d9e;
+    }
     .page {
         padding: 5px;
-    }
-    header {
-        margin-top: 50px;
     }
     main .cards {
         display: flex;
