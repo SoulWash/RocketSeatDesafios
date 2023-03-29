@@ -41,6 +41,10 @@
   .lineLateral {
     display: none;
   }
+
+  .blockArt{
+    grid-template-columns: repeat(2,1fr);
+  }
 }
 
 @media (max-width: 650px) {
@@ -51,6 +55,17 @@
   .content {
     flex-direction: column;
   }
+
+  .container-artistas {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .blockArt {
+    grid-template-columns: repeat(1,1fr);
+    
+  }
+
 }
 
 @media (max-width: 490px) {

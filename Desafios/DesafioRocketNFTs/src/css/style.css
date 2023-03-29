@@ -33,7 +33,7 @@ body {
 
 .page .container {
   background: url(../image/background.png) no-repeat center center/ cover;
-  padding: 57px 82px 0;
+  padding: 57px clamp(3rem,1rem + 5vw,8.2rem) 0;
   margin: auto;
 }
 header {
@@ -81,7 +81,7 @@ header button {
   gap: 55px;
   text-align: left;
 }
-.containerInit p {
+p {
   font-weight: 400;
   font-size: var(--font-sz-p);
   line-height: 2.2rem;
@@ -97,15 +97,13 @@ header button {
   align-items: baseline;
 }
 
-.containerInit h1 {
+h1 {
   font-weight: 700;
   font-size: var(--font-sz-h1);
   line-height: 6.1rem;
 }
-.containerInit h1 span,
-.blockText span,
-.container-astro h1 span,
-.astroParagrafo span {
+
+span {
   color: var(--color-logo);
 }
 
@@ -168,13 +166,9 @@ header button {
   flex-direction: column;
 }
 
-.block .blockNumbers h1 {
-  font-size: var(--font-sz-h1);
-  line-height: 6.1rem;
-}
 .block .blockNumbers p {
   color: var(--subtitle-color);
-  font-size: var(--font-sz-p);
+  font-weight: 600;
   line-height: 2.4rem;
 }
 
@@ -192,8 +186,8 @@ header button {
 .content .blockText p,
 .content .blockText a {
   color: var(--text-color);
+
   font-weight: 400;
-  font-size: var(--font-sz-p);
   line-height: 2.2rem;
 }
 
@@ -206,19 +200,16 @@ header button {
 
 .container-astro {
   margin: auto;
-  padding: 15rem 8.7rem;
+  padding: 15.1rem 8.7rem;
 }
 .container-astro h1 {
-  font-weight: 700;
-  font-size: var(--font-sz-h1);
-  line-height: 6.1rem;
   margin-bottom: 15.8rem;
 }
 .astroBlock {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-  gap: clamp(4rem,5rem + 2vw,25em);
+  gap: clamp(10rem,5rem + 5vw,25em);
 }
 
 .astroSpace {
@@ -234,7 +225,7 @@ header button {
 
 .astroTitule h3{
   font-weight: 500;
-  font-size: (2rem,1rem + 5vw, 3rem);
+  font-size: clamp(2rem,1rem + 5vw, 3rem);
   line-height: 3.7rem;
   margin-bottom: 4.4rem;
 }
@@ -243,9 +234,10 @@ header button {
   display: flex;
   justify-content: space-between;
   color: var(--subtitle-color);
+
   font-weight: 600;
-  font-size: var(--font-sz-p);
   line-height: 2.4rem;
+
   margin-bottom: 2.6rem;
 }
 .astroParagrafo span {
@@ -267,3 +259,58 @@ header button {
 }
 
 /* Parte 4 */
+
+.container-artistas {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.container-artistas h1 {
+  margin-bottom: 12rem;
+
+}
+.blockArt {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: clamp(2rem,5rem + 2vw,11.1rem);
+
+}
+
+.artista {
+  display: flex;
+  align-items: center;
+
+  padding: clamp(0.8rem,0.5rem + 5vw,2.5rem) clamp(1.2rem,0.8rem + 5vw,3.2rem);
+  gap: 4rem;
+  max-width: 35rem;
+  background-color: var(--card-color);
+  margin-bottom: 5.4rem;
+
+  transition: all .3s;
+}
+.artista:hover{
+  background-color: var(--color-logo);
+}
+.art-legenda p span:hover{
+  color: var(--text-color);
+}
+
+
+.artista p {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+
+  font-weight: 500;
+  line-height: 2.4rem;
+
+}
+
+.pArt {
+  justify-content: center;
+  display: flex;
+  gap: 1.3rem;
+}
