@@ -14,6 +14,8 @@
   --color-input: #0d0d0d;
 
   font-size: 62.5%;
+  --font-sz-h1: clamp(2rem, 1rem + 3vw, 5rem);
+  --font-sz-p:clamp(1rem, 0.4rem + 3vw, 1.8rem);
 }
 
 body {
@@ -26,6 +28,8 @@ body {
   margin: auto;
   max-width: 144rem;
 }
+
+/* Parte 1 */
 
 .page .container {
   background: url(../image/background.png) no-repeat center center/ cover;
@@ -79,7 +83,7 @@ header button {
 }
 .containerInit p {
   font-weight: 400;
-  font-size: clamp(1rem, 0.4rem + 2vw, 1.8rem);
+  font-size: var(--font-sz-p);
   line-height: 2.2rem;
 }
 
@@ -95,11 +99,13 @@ header button {
 
 .containerInit h1 {
   font-weight: 700;
-  font-size: clamp(2rem, 1rem + 3vw, 5rem);
+  font-size: var(--font-sz-h1);
   line-height: 6.1rem;
 }
 .containerInit h1 span,
-.blockText span{
+.blockText span,
+.container-astro h1 span,
+.astroParagrafo span {
   color: var(--color-logo);
 }
 
@@ -115,7 +121,7 @@ header button {
   max-width: 260rem;
 }
 
-.galeriaAstro img {
+.galeriaAstro img{
   margin: auto;
   border: 1px solid var(--text-color);
   width: clamp(15rem, 0.5rem + 20vw, 30.8rem);
@@ -128,6 +134,7 @@ header button {
   margin-bottom: 6rem;
 }
 
+/* Parte 2 */
 
 .container-main {
   display: grid;
@@ -144,14 +151,13 @@ header button {
   grid-area: C;
 }
 
-
 .container-main .block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 6.7rem;
-  gap: clamp(3rem,2rem + 8vw,7rem);
+  gap: clamp(3rem, 2rem + 8vw, 7rem);
   font-weight: 600;
 
   border-right: 1px solid var(--subtitle-color);
@@ -162,36 +168,102 @@ header button {
   flex-direction: column;
 }
 
-.block .blockNumbers h1{
-  font-size: clamp(2rem, 1rem + 3vw, 5rem);
+.block .blockNumbers h1 {
+  font-size: var(--font-sz-h1);
   line-height: 6.1rem;
 }
-.block .blockNumbers p{
+.block .blockNumbers p {
   color: var(--subtitle-color);
-  font-size: clamp(1rem, 0.4rem + 3vw, 2rem);
+  font-size: var(--font-sz-p);
   line-height: 2.4rem;
 }
 
-.container-main .content{
+.container-main .content {
   display: flex;
   justify-content: space-between;
-  padding: 70px;
-  gap: clamp(3rem,3rem + 2vw,12.6rem);
+  padding: clamp(3rem,2rem + 3vw,7rem);
+  gap: clamp(3rem, 3rem + 2vw, 12.6rem);
 }
 .content .blockText {
   display: flex;
   flex-direction: column;
-  gap: clamp(3rem,1rem + 2vw,6.3rem);
+  gap: clamp(3rem, 1rem + 2vw, 6.3rem);
 }
-.content .blockText p, 
-.content .blockText a{
+.content .blockText p,
+.content .blockText a {
   color: var(--text-color);
   font-weight: 400;
-  font-size: clamp(1rem, 0.4rem + 2vw, 1.8rem);
+  font-size: var(--font-sz-p);
   line-height: 2.2rem;
 }
 
-.container-main div:nth-last-child(1) img{
+.container-main div:nth-last-child(1) img {
   width: 100%;
   margin: auto;
 }
+
+/* Parte 3 */
+
+.container-astro {
+  margin: auto;
+  padding: 15rem 8.7rem;
+}
+.container-astro h1 {
+  font-weight: 700;
+  font-size: var(--font-sz-h1);
+  line-height: 6.1rem;
+  margin-bottom: 15.8rem;
+}
+.astroBlock {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: clamp(4rem,5rem + 2vw,25em);
+}
+
+.astroSpace {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.astroGap{
+  max-width: 35rem;
+}
+
+.astroTitule h3{
+  font-weight: 500;
+  font-size: (2rem,1rem + 5vw, 3rem);
+  line-height: 3.7rem;
+  margin-bottom: 4.4rem;
+}
+
+.astroParagrafo p{
+  display: flex;
+  justify-content: space-between;
+  color: var(--subtitle-color);
+  font-weight: 600;
+  font-size: var(--font-sz-p);
+  line-height: 2.4rem;
+  margin-bottom: 2.6rem;
+}
+.astroParagrafo span {
+  font-weight: 400;
+}
+
+.lineLateral {
+  height: 718px;
+  border-right: 1px solid var(--subtitle-color);
+}
+
+.container-astro .astroTitule {
+  display: flex;
+  justify-content: space-between;
+}
+
+.imgAstro{
+  width: clamp(20rem,5rem + 80vw, 35rem);
+}
+
+/* Parte 4 */

@@ -28,7 +28,19 @@
     flex-direction: row;
     border-right: none;
   }
+  .container-astro {
+    margin: auto;
+    text-align: center;
+  }
 
+  .astroBlock {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .lineLateral {
+    display: none;
+  }
 }
 
 @media (max-width: 650px) {
