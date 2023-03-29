@@ -9,7 +9,7 @@
   --color-logo: #ff5b50;
   --card-color: #252525;
   --text-color: #fff;
-  --subtitle-color: #5a5757;
+  --subtitle-color: #636060;
   --black-text: #000;
   --color-input: #0d0d0d;
 
@@ -17,9 +17,9 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    background-color: var(--body-background);
-    color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--body-background);
+  color: var(--text-color);
 }
 
 .page {
@@ -29,7 +29,7 @@ body {
 
 .page .container {
   background: url(../image/background.png) no-repeat center center/ cover;
-  padding: 57px 82px;
+  padding: 57px 82px 0;
   margin: auto;
 }
 header {
@@ -40,26 +40,27 @@ header {
 header nav {
   display: flex;
   align-items: center;
-  gap: clamp(3rem,1rem + 2vw,6rem);
+  gap: clamp(3rem, 1rem + 2vw, 6rem);
 }
 header nav a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 400;
-  font-size: clamp(1rem,0.3rem + 2vw,1.8rem);
+  font-size: clamp(1rem, 0.3rem + 2vw, 1.8rem);
   line-height: 2.2rem;
 }
 header button {
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 12px 22px 12px 14px;
+  gap: clamp(0.8rem, 0.6rem + 5vw, 1.5rem);
+  padding: 1.2rem clamp(0.6rem, 0.3rem + 2vw, 2.2rem) 1.2rem
+    clamp(0.8rem, 0.3rem + 5vw, 1.4rem);
   font-weight: 700;
-  font-size: clamp(1rem,0.2rem + 3vw,1.6rem);
+  font-size: clamp(0.8rem, 0.2rem + 2vw, 1.6rem);
   line-height: 2rem;
   color: var(--black-text);
 
-  max-width: 230px;
+  max-width: clamp(15rem, 1rem + 40vw, 23rem);
 }
 
 .containerInit {
@@ -68,7 +69,6 @@ header button {
   align-items: start;
   gap: 40px;
   margin-bottom: 100px;
-
 }
 
 .containerInit div:nth-child(1) {
@@ -79,45 +79,119 @@ header button {
 }
 .containerInit p {
   font-weight: 400;
-  font-size: clamp(1rem,0.4rem + 2vw,1.8rem);
+  font-size: clamp(1rem, 0.4rem + 2vw, 1.8rem);
   line-height: 2.2rem;
 }
 
-.containerInit div:nth-child(2){
-    display: flex;
-    align-items: end;
+.containerInit div:nth-child(2) {
+  display: flex;
+  align-items: end;
 }
-.containerInit div:nth-child(2) div:nth-child(2){
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+.containerInit div:nth-child(2) div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
 
 .containerInit h1 {
-    font-weight: 700;
-    font-size: clamp(2rem,1rem + 3vw,5rem);
-    line-height: 6.1rem;
-  }
-.containerInit h1 span{
-    color: var(--color-logo);
+  font-weight: 700;
+  font-size: clamp(2rem, 1rem + 3vw, 5rem);
+  line-height: 6.1rem;
+}
+.containerInit h1 span,
+.blockText span{
+  color: var(--color-logo);
 }
 
-
 .containerInit div:nth-child(3) img {
-    max-width: clamp(10rem,5rem + 30vw,20rem);
+  max-width: clamp(10rem, 5rem + 30vw, 20rem);
 }
 
 .galeriaAstro {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1.6rem;
-    margin:0 auto;
-    max-width: 260rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+
+  max-width: 260rem;
 }
 
-.galeriaAstro img{
-    margin: auto;
-    border: 1px solid var(--text-color);
-    width: clamp(15rem,0.5rem + 20vw,30.8rem);
-    margin-bottom: 60px;
+.galeriaAstro img {
+  margin: auto;
+  border: 1px solid var(--text-color);
+  width: clamp(15rem, 0.5rem + 20vw, 30.8rem);
+}
+
+.galeriaAstro img:nth-child(1),
+.galeriaAstro img:nth-child(2),
+.galeriaAstro img:nth-child(3),
+.galeriaAstro img:nth-child(4) {
+  margin-bottom: 6rem;
+}
+
+
+.container-main {
+  display: grid;
+  grid-template-areas: "A B B" "A C C";
+}
+
+.container-main div:nth-child(1) {
+  grid-area: A;
+}
+.container-main div:nth-child(2) {
+  grid-area: B;
+}
+.container-main div:nth-child(3) {
+  grid-area: C;
+}
+
+
+.container-main .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6.7rem;
+  gap: clamp(3rem,2rem + 8vw,7rem);
+  font-weight: 600;
+
+  border-right: 1px solid var(--subtitle-color);
+  border-bottom: 1px solid var(--subtitle-color);
+}
+.block .blockNumbers {
+  display: flex;
+  flex-direction: column;
+}
+
+.block .blockNumbers h1{
+  font-size: clamp(2rem, 1rem + 3vw, 5rem);
+  line-height: 6.1rem;
+}
+.block .blockNumbers p{
+  color: var(--subtitle-color);
+  font-size: clamp(1rem, 0.4rem + 3vw, 2rem);
+  line-height: 2.4rem;
+}
+
+.container-main .content{
+  display: flex;
+  justify-content: space-between;
+  padding: 70px;
+  gap: clamp(3rem,3rem + 2vw,12.6rem);
+}
+.content .blockText {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem,1rem + 2vw,6.3rem);
+}
+.content .blockText p, 
+.content .blockText a{
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: clamp(1rem, 0.4rem + 2vw, 1.8rem);
+  line-height: 2.2rem;
+}
+
+.container-main div:nth-last-child(1) img{
+  width: 100%;
+  margin: auto;
 }
