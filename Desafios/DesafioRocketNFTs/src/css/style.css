@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-background: #0e0e0e;
+  --color-logo: #ff5b50;
+  --card-color: #252525;
+  --text-color: #fff;
+  --subtitle-color: #5a5757;
+  --black-text: #000;
+  --color-input: #0d0d0d;
+
+  font-size: 62.5%;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--body-background);
+    color: var(--text-color);
+}
+
+.page {
+  margin: auto;
+  max-width: 144rem;
+}
+
+.page .container {
+  background: url(../image/background.png) no-repeat center center/ cover;
+  padding: 57px 82px;
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 97px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(3rem,1rem + 2vw,6rem);
+}
+header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: clamp(1rem,0.3rem + 2vw,1.8rem);
+  line-height: 2.2rem;
+}
+header button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 22px 12px 14px;
+  font-weight: 700;
+  font-size: clamp(1rem,0.2rem + 3vw,1.6rem);
+  line-height: 2rem;
+  color: var(--black-text);
+
+  max-width: 230px;
+}
+
+.containerInit {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  margin-bottom: 100px;
+
+}
+
+.containerInit div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  text-align: left;
+}
+.containerInit p {
+  font-weight: 400;
+  font-size: clamp(1rem,0.4rem + 2vw,1.8rem);
+  line-height: 2.2rem;
+}
+
+.containerInit div:nth-child(2){
+    display: flex;
+    align-items: end;
+}
+.containerInit div:nth-child(2) div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.containerInit h1 {
+    font-weight: 700;
+    font-size: clamp(2rem,1rem + 3vw,5rem);
+    line-height: 6.1rem;
+  }
+.containerInit h1 span{
+    color: var(--color-logo);
+}
+
+
+.containerInit div:nth-child(3) img {
+    max-width: clamp(10rem,5rem + 30vw,20rem);
+}
+
+.galeriaAstro {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1.6rem;
+    margin:0 auto;
+    max-width: 260rem;
+}
+
+.galeriaAstro img{
+    margin: auto;
+    border: 1px solid var(--text-color);
+    width: clamp(15rem,0.5rem + 20vw,30.8rem);
+    margin-bottom: 60px;
+}
