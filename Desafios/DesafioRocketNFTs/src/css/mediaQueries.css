@@ -1,3 +1,9 @@
+@media (max-width:1048px) {
+  .blockArt{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
 @media (max-width: 920px) {
   header {
     flex-direction: column;
@@ -42,8 +48,13 @@
     display: none;
   }
 
-  .blockArt{
-    grid-template-columns: repeat(2,1fr);
+  .footer-middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer form{
+    border-right: none;
   }
 }
 
@@ -66,10 +77,35 @@
     
   }
 
+  .footer-fim {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .blockArt div:nth-child(3),
+  .blockArt div:nth-child(4){
+    display: none;
+  }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 540px) {
   .galeriaAstro {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .galeriaAstro img:nth-child(6),
+  .galeriaAstro img:nth-child(7),
+  .galeriaAstro img:nth-child(8){
+    display: none;
+  }
+
+  .container-artistas h1 {
+    margin-bottom: 3rem;
+  }
+  
+  .blockArt div:nth-child(5),
+  .blockArt div:nth-child(6){
+    display: none;
+  }
+
 }

@@ -15,7 +15,7 @@
 
   font-size: 62.5%;
   --font-sz-h1: clamp(2rem, 1rem + 3vw, 5rem);
-  --font-sz-p:clamp(1rem, 0.4rem + 3vw, 1.8rem);
+  --font-sz-p: clamp(1rem, 0.4rem + 3vw, 1.8rem);
 }
 
 body {
@@ -29,11 +29,35 @@ body {
   max-width: 144rem;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: var(--font-sz-h1);
+  line-height: 6.1rem;
+}
+
+span {
+  color: var(--color-logo);
+}
+
+p {
+  font-weight: 400;
+  font-size: var(--font-sz-p);
+  line-height: 2.2rem;
+}
+
+ul, li{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: var(--font-sz-p);
+}
 /* Parte 1 */
 
 .page .container {
   background: url(../image/background.png) no-repeat center center/ cover;
-  padding: 57px clamp(3rem,1rem + 5vw,8.2rem) 0;
+  padding: 57px clamp(3rem, 1rem + 5vw, 8.2rem) 0;
   margin: auto;
 }
 header {
@@ -81,11 +105,6 @@ header button {
   gap: 55px;
   text-align: left;
 }
-p {
-  font-weight: 400;
-  font-size: var(--font-sz-p);
-  line-height: 2.2rem;
-}
 
 .containerInit div:nth-child(2) {
   display: flex;
@@ -95,16 +114,6 @@ p {
   display: flex;
   flex-direction: column;
   align-items: baseline;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: var(--font-sz-h1);
-  line-height: 6.1rem;
-}
-
-span {
-  color: var(--color-logo);
 }
 
 .containerInit div:nth-child(3) img {
@@ -119,7 +128,7 @@ span {
   max-width: 260rem;
 }
 
-.galeriaAstro img{
+.galeriaAstro img {
   margin: auto;
   border: 1px solid var(--text-color);
   width: clamp(15rem, 0.5rem + 20vw, 30.8rem);
@@ -175,7 +184,7 @@ span {
 .container-main .content {
   display: flex;
   justify-content: space-between;
-  padding: clamp(3rem,2rem + 3vw,7rem);
+  padding: clamp(3rem, 2rem + 3vw, 7rem);
   gap: clamp(3rem, 3rem + 2vw, 12.6rem);
 }
 .content .blockText {
@@ -186,7 +195,6 @@ span {
 .content .blockText p,
 .content .blockText a {
   color: var(--text-color);
-
   font-weight: 400;
   line-height: 2.2rem;
 }
@@ -209,7 +217,7 @@ span {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-  gap: clamp(10rem,5rem + 5vw,25em);
+  gap: clamp(10rem, 5rem + 5vw, 25em);
 }
 
 .astroSpace {
@@ -219,18 +227,18 @@ span {
   gap: 5rem;
 }
 
-.astroGap{
+.astroGap {
   max-width: 35rem;
 }
 
-.astroTitule h3{
+.astroTitule h3 {
   font-weight: 500;
-  font-size: clamp(2rem,1rem + 5vw, 3rem);
+  font-size: clamp(2rem, 1rem + 5vw, 3rem);
   line-height: 3.7rem;
   margin-bottom: 4.4rem;
 }
 
-.astroParagrafo p{
+.astroParagrafo p {
   display: flex;
   justify-content: space-between;
   color: var(--subtitle-color);
@@ -254,8 +262,8 @@ span {
   justify-content: space-between;
 }
 
-.imgAstro{
-  width: clamp(20rem,5rem + 80vw, 35rem);
+.imgAstro {
+  width: clamp(20rem, 5rem + 80vw, 35rem);
 }
 
 /* Parte 4 */
@@ -269,35 +277,34 @@ span {
 
 .container-artistas h1 {
   margin-bottom: 12rem;
-
 }
+
 .blockArt {
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: clamp(2rem,5rem + 2vw,11.1rem);
-
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(2rem, 3rem + 2vw, 11.1rem);
 }
 
 .artista {
   display: flex;
   align-items: center;
 
-  padding: clamp(0.8rem,0.5rem + 5vw,2.5rem) clamp(1.2rem,0.8rem + 5vw,3.2rem);
+  padding: clamp(0.8rem, 0.5rem + 5vw, 2.5rem)
+    clamp(1.2rem, 0.8rem + 5vw, 3.2rem);
   gap: 4rem;
   max-width: 35rem;
   background-color: var(--card-color);
   margin-bottom: 5.4rem;
 
-  transition: all .3s;
+  transition: all 0.3s;
 }
-.artista:hover{
+.artista:hover {
   background-color: var(--color-logo);
 }
-.art-legenda p span:hover{
+.art-legenda p span:hover {
   color: var(--text-color);
 }
-
 
 .artista p {
   display: flex;
@@ -306,11 +313,130 @@ span {
 
   font-weight: 500;
   line-height: 2.4rem;
-
 }
 
 .pArt {
   justify-content: center;
   display: flex;
   gap: 1.3rem;
+  margin-bottom: clamp(2rem,3rem + 2vw,14.8rem);
 }
+
+/* Parte 5 */
+
+footer {
+  margin-top: 14.8rem;
+  background-color: var(--card-color);
+}
+
+footer .footer-inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: clamp(4rem,2rem + 3vw,8rem) clamp(4rem,2rem + 3vw,8rem) clamp(3rem,1rem + 3vw,6rem);
+}
+
+footer .footer-inicio img:nth-child(1) {
+  width: clamp(10rem, 5rem + 20vw, 27.6rem);
+}
+
+footer .footer-inicio a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: var(--color-logo);
+  width: clamp(4rem, 2rem + 5vw, 8rem);
+  padding: clamp(1rem, 0.5rem + 2vw, 2.8rem);
+
+  transition: all 0.2s ease-in;
+}
+footer .footer-inicio a:hover {
+  background-color: var(--text-color);
+}
+
+footer .footer-middle {
+  display: flex;
+  border-top: 1px solid var(--subtitle-color);
+  border-bottom: 1px solid var(--subtitle-color);
+  width: 100%;
+}
+
+footer form {
+  display: flex;
+  padding: clamp(2rem,2rem + 3vw,8rem);
+  border-right: 1px solid var(--subtitle-color);
+}
+
+footer fieldset {
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer legend {
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 3.7rem;
+  margin-bottom: 2.5rem;
+}
+
+input, footer ul li{
+  font-size: var(--font-sz-p);
+  line-height: 2.4rem;
+}
+
+input#emailEvent {
+  padding: clamp(1rem,0.4rem + 2vw,2rem) clamp(1rem,0.4rem + 2vw,2rem) clamp(1rem,0.4rem + 2vw,2rem) clamp(1.8rem,0.2rem + 3vw,2.5rem);
+  background-color: var(--black-text);
+  border: none;
+  font-weight: 400;
+  color: var(--color-logo);
+}
+
+input#submitEvent {
+  padding: clamp(1.4rem,0.3rem + 2vw ,2.2rem) clamp(1.6rem,0.3rem + 3vw,2.5rem);
+  color: var(--black-text);
+  font-weight: 700;
+}
+
+footer ul#list {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2rem,3rem + 2vw,12.8rem);
+}
+footer .listWhite {
+  color: var(--text-color);
+  font-weight: 700;
+}
+footer ul li{
+  color: var(--subtitle-color);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+footer .footer-fim {
+  padding: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer-fim a{
+  color: var(--subtitle-color);
+  transition: all .3s ease-in-out;
+}
+footer .footer-fim a:hover{
+  transform: scale(1.1);
+  color: var(--color-logo);
+}
+
+.footer-fim .redes{
+  display: flex;
+  gap: 5rem;
+}
+
+
