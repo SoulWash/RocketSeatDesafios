@@ -53,6 +53,8 @@ a {
   text-decoration: none;
   font-size: var(--font-sz-p);
 }
+
+
 /* Parte 1 */
 
 .page .container {
@@ -64,6 +66,8 @@ header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 97px;
+
+  animation: Left 1s ease-in;
 }
 header nav {
   display: flex;
@@ -83,13 +87,24 @@ header button {
   gap: clamp(0.8rem, 0.6rem + 5vw, 1.5rem);
   padding: 1.2rem clamp(0.6rem, 0.3rem + 2vw, 2.2rem) 1.2rem
     clamp(0.8rem, 0.3rem + 5vw, 1.4rem);
+
   font-weight: 700;
   font-size: clamp(0.8rem, 0.2rem + 2vw, 1.6rem);
   line-height: 2rem;
-  color: var(--black-text);
-
+  
+  border: none;
+  border-radius: 8px;
   max-width: clamp(15rem, 1rem + 40vw, 23rem);
+
+  color: var(--black-text);
+  background-color: var(--text-color);
+  filter: brightness(70%);
+  transition: all .2s ease-in;
 }
+header button:hover {
+  color: var(--color-logo);
+  filter: brightness(100%);
+} 
 
 .containerInit {
   display: flex;
@@ -97,6 +112,8 @@ header button {
   align-items: start;
   gap: 40px;
   margin-bottom: 100px;
+
+  animation: Opacity 700ms ease-in 1s backwards;
 }
 
 .containerInit div:nth-child(1) {
@@ -120,12 +137,20 @@ header button {
   max-width: clamp(10rem, 5rem + 30vw, 20rem);
 }
 
+#imgBadge {
+  animation: upScaleAdnDown 5s 1s backwards infinite ease-in-out;
+}
+
+
+
 .galeriaAstro {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem;
 
   max-width: 260rem;
+
+  animation: upScale 3s 1.2s backwards ease-in;
 }
 
 .galeriaAstro img {
@@ -146,6 +171,9 @@ header button {
 .container-main {
   display: grid;
   grid-template-areas: "A B B" "A C C";
+  
+
+  animation: Right 1s ease-in 3s backwards;
 }
 
 .container-main div:nth-child(1) {
@@ -212,6 +240,8 @@ header button {
 }
 .container-astro h1 {
   margin-bottom: 15.8rem;
+
+  animation: Opacity 1s 3.5s ease-in backwards;
 }
 .astroBlock {
   margin: auto;
@@ -237,6 +267,12 @@ header button {
   line-height: 3.7rem;
   margin-bottom: 4.4rem;
 }
+.container-astro .astroTitule {
+  display: flex;
+  justify-content: space-between;
+
+  animation: Opacity 1s 3.5s ease-in backwards;
+}
 
 .astroParagrafo p {
   display: flex;
@@ -247,6 +283,8 @@ header button {
   line-height: 2.4rem;
 
   margin-bottom: 2.6rem;
+
+  animation: Left .8s 3.5s ease-in backwards;
 }
 .astroParagrafo span {
   font-weight: 400;
@@ -255,15 +293,14 @@ header button {
 .lineLateral {
   height: 718px;
   border-right: 1px solid var(--subtitle-color);
-}
 
-.container-astro .astroTitule {
-  display: flex;
-  justify-content: space-between;
+  animation: Opacity 1s 5s ease-in backwards;
 }
 
 .imgAstro {
   width: clamp(20rem, 5rem + 80vw, 35rem);
+
+  animation: upScale 1s 5s ease-in backwards;
 }
 
 /* Parte 4 */
@@ -273,6 +310,8 @@ header button {
   display: flex;
   flex-direction: column;
   margin: auto;
+
+  animation: Opacity 1s 5.5s ease-in backwards;
 }
 
 .container-artistas h1 {
@@ -296,6 +335,7 @@ header button {
   max-width: 35rem;
   background-color: var(--card-color);
   margin-bottom: 5.4rem;
+  border-radius: 8px;
 
   transition: all 0.3s;
 }
@@ -327,6 +367,8 @@ header button {
 footer {
   margin-top: 14.8rem;
   background-color: var(--card-color);
+
+  animation: UP 3s 7s ease-in backwards;
 }
 
 footer .footer-inicio {
@@ -348,7 +390,7 @@ footer .footer-inicio a {
   background-color: var(--color-logo);
   width: clamp(4rem, 2rem + 5vw, 8rem);
   padding: clamp(1rem, 0.5rem + 2vw, 2.8rem);
-
+  border-radius: 8px;
   transition: all 0.2s ease-in;
 }
 footer .footer-inicio a:hover {
@@ -393,12 +435,20 @@ input#emailEvent {
   border: none;
   font-weight: 400;
   color: var(--color-logo);
+
+  border-radius: 8px 0 0 8px;
 }
 
 input#submitEvent {
   padding: clamp(1.4rem,0.3rem + 2vw ,2.2rem) clamp(1.6rem,0.3rem + 3vw,2.5rem);
   color: var(--black-text);
   font-weight: 700;
+  border-radius: 0 8px 8px 0;
+  filter: brightness(70%);
+  transition: all .3s ease-in-out;
+}
+input#submitEvent:hover {
+  filter: brightness(100%);
 }
 
 footer ul#list {
@@ -439,4 +489,85 @@ footer .footer-fim a:hover{
   gap: 5rem;
 }
 
+@keyframes Left {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+    display: none;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+@keyframes Right {
+  0% {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes Opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes upScale {
+  0% {
+    opacity: 1;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes UP {
+  0% {
+    opacity: 0;
+    transform: translateX(-180px);
+  }
+  20% {
+    opacity: 0.2;
+    transform: translateY(100px);
+  }
+  40% {
+    opacity: 0.5;
+    transform: translateY(-50px);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateY(25px);
+  }
+  80% {
+    opacity: 0.9;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes upScaleAdnDown {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}

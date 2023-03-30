@@ -24,18 +24,18 @@
 <body>
     <div class="page">
         <div class="container">
-            <header>
+            <header id="init">
                 <img src="src/image/logo.svg" alt="Logo da Rocket NFTs">
                 <nav>
-                    <a href="#">Comprar NFT</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">FAQ</a>
+                    <a href="#init">Comprar NFT</a>
+                    <a href="#sobre">Sobre</a>
+                    <a href="#fim">FAQ</a>
                 </nav>
                 <button><img src="src/image/logo_MetaMask.svg" alt="Desenho da cabeça de uma raposa"> Conectar
                     carteira</button>
             </header>
-            <section>
-                <div class="containerInit" id="init">
+            <article>
+                <section class="containerInit">
                     <div>
                         <p>Mercado digital para colecionáveis em criptos e tokens não fungível (NFT).
                             Compre, venda e descubra ativos digitais<br> exclusivos para você.</p>
@@ -52,12 +52,12 @@
                             arte digital e colecione diversas <span>NFTs</span>
                         </h1>
                     </div>
-                    <div>
+                    <div id="imgBadge">
                         <img src="src/image/badge.svg"
                             alt="Logo da Rocketseat no meio e a frase Explore a arte, circulando o logo">
                     </div>
-                </div>
-                <div class="galeriaAstro">
+                </section>
+                <section class="galeriaAstro">
                     <img src="src/image/galeria-1.png" alt="Close na astronauta">
                     <img src="src/image/galeria-2.png" alt="Close na astronauta">
                     <img src="src/image/galeria-3.png" alt="Close na astronauta">
@@ -66,10 +66,10 @@
                     <img src="src/image/galeria-6.png" alt="Close na astronauta">
                     <img src="src/image/galeria-7.png" alt="Close na astronauta">
                     <img src="src/image/galeria-8.png" alt="Close na astronauta">
-                </div>
-            </section>
+                </section>
+            </article>
         </div>
-        <div class="container-main">
+        <main class="container-main" id="sobre">
             <div class="block">
                 <div class="blockNumbers">
                     <h1>10k+</h1>
@@ -105,10 +105,10 @@
             <div>
                 <img src="src/image/banner.png" alt="Homem negro com óculos futurista e luzes leds ao fundo">
             </div>
-        </div>
-        <div class="container-astro">
+        </main>
+        <article class="container-astro">
             <h1><span>Populares</span> da semana</h1>
-            <div class="astroBlock">
+            <section class="astroBlock">
                 <div class="astroSpace">
                     <div class="astroGap">
                         <div class="astroTitule">
@@ -154,11 +154,11 @@
                         <img src="src/image/astronauta-4.png" alt="Astronauta" class="imgAstro">
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container-artistas">
+            </section>
+        </article>
+        <article class="container-artistas">
             <h1>Melhores <span>artistas</span></h1>
-            <div class="blockArt">
+            <section class="blockArt">
                 <div class="artista">
                     <img src="src/image/artista-1.png" alt="Foto do artista Mayk Brito">
                     <div class="art-legenda">
@@ -195,10 +195,10 @@
                         <p>Diego F. <span>53 Fotografias</span></p>
                     </div>
                 </div>
-            </div>
+            </section>
             <p class="pArt">Ver todos os artistas <img src="src/image/arrow-orange.svg" alt="Seta"></p>
-        </div>
-        <footer>
+        </article>
+        <footer id="fim">
             <div class="footer-inicio">
                 <img src="src/image/logo.svg" alt="Logo da Rocket NFTs">
                 <a href="#init"><img src="src/image/arrow-black.svg" alt="Seta"></a>
