@@ -173,7 +173,7 @@ header button:hover {
   grid-template-areas: "A B B" "A C C";
   
 
-  animation: Right 1s ease-in 3s backwards;
+  animation: Left 1s ease-in 3s backwards;
 }
 
 .container-main div:nth-child(1) {
@@ -492,7 +492,7 @@ footer .footer-fim a:hover{
 @keyframes Left {
   0% {
     opacity: 0;
-    transform: translateX(-30px);
+    transform: translateX(-1.5rem);
     display: none;
   }
   100% {
@@ -501,16 +501,7 @@ footer .footer-fim a:hover{
   }
 }
 
-@keyframes Right {
-  0% {
-    opacity: 0;
-    transform: translateX(30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
+
 
 @keyframes Opacity {
   0% {
@@ -535,10 +526,6 @@ footer .footer-fim a:hover{
 @keyframes UP {
   0% {
     opacity: 0;
-    transform: translateX(-180px);
-  }
-  20% {
-    opacity: 0.2;
     transform: translateY(100px);
   }
   40% {
