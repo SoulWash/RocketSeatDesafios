@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 130%;
+}
+:root {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  background: #fbfaff;
+  min-height: 100vh;
+  font-family: "Inter";
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  max-width: 44rem;
+  width: 90%;
+  margin: auto;
+}
+
+.drag-files {
+  background: #f3f0ff;
+  border: 1px dashed #c1b2fa;
+  border-radius: 0.8rem;
+  text-align: center;
+  padding: 2.8rem 0 3.2rem;
+
+  position: relative;
+}
+
+.drag-files input {
+  all: unset;
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+}
+
+.drag-files i.ph {
+  font-size: 4.8rem;
+  color: #7c3aed;
+}
+
+.drag-files h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #7c3aed;
+  margin-top: 1.2rem;
+}
+.drag-files p {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #746e82;
+}
+.drag-files.dragover {
+  background: #ebe6ff;
+}
+
+.files {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.2rem;
+}
+
+.box {
+  padding: 8px;
+  background: #ffffff;
+  box-shadow: 0px 4px 16px #eae2fd;
+  border-radius: 8px;
+
+  display: flex;
+  gap: 1.2rem;
+
+  --icon-bg: #eee;
+  --icon-color: #aaa;
+  --progress-color: #000;
+  --progress-text: #999;
+
+  position: relative;
+}
+
+.box .icon {
+  background: var(--icon-bg);
+  border-radius: 0.4rem;
+  padding: 1.6rem 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .icon i {
+  font-size: 2.4rem;
+  color: var(--icon-color);
+}
+
+.box .info {
+  flex: 1;
+}
+.info .filename {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #575361;
+}
+.info .filesize {
+  color: #857e95;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  line-height: 0;
+  margin-top: 0.4rem;
+}
+
+progress {
+  flex: 1;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 0.8rem;
+  border-radius: 99.9rem;
+  overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+  background: #e3e3ed;
+}
+progress::-webkit-progress-value {
+  background: var(--progress-color);
+}
+
+.bar span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--progress-text);
+}
+
+.action {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    color: #7c3aed;
+    cursor: pointer;
+}
+
+.uploading{
+    --icon-bg: #E9E3F8;
+    --icon-color:#AC96E4;
+    --progress-color:linear-gradient(90deg, rgba(58, 97, 237, 0.52) 0%, #7C3AED 100%);
+    --progress-text:#9892A6;
+} 
+
+.done {
+    --icon-bg: #DAF2D9;
+    --icon-color:#73B172;
+    --progress-color:#73B172;
+    --progress-text:#4E884D;
+}
+.error{
+    --icon-bg: #F2D9D9;
+    --icon-color:#E36363;
+    --progress-color:#E3E3ED;
+    --progress-text:#E36363;
+}
