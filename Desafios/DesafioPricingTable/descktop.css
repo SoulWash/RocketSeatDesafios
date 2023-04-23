@@ -1,16 +1,17 @@
-@media (min-width:1024px){
-    html,body {
-        background-color: var(--color-gray-400);
-    }
-    .pricingTable {
-        flex-direction: row;
-        align-items: center;
-
-        width: 1440px;
-        margin: 205px auto 0;
-    }
-    section .inner{
-        height: 454px;
-        width: 384px;
-    }
+@media (min-width: 1024px) {
+  html,
+  body {
+    background-color: var(--color-gray-400);
+  }
+  .pricingTable {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: clamp(900px, 50px + 60vw, 1440px);
+    margin: 205px auto 0;
+  }
+  section .inner {
+    height: 454px;
+    width: clamp(310px, 20px + 15vw, 384px);
+  }
 }
