@@ -1,0 +1,16 @@
+@media (min-width:1024px){
+    html,body {
+        background-color: var(--color-gray-400);
+    }
+    .pricingTable {
+        flex-direction: row;
+        align-items: center;
+
+        width: 1440px;
+        margin: 205px auto 0;
+    }
+    section .inner{
+        height: 454px;
+        width: 384px;
+    }
+}
