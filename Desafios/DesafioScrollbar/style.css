@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color:#16151E;
+    --bg-input-color:#24243D;
+    --text-color:#E1E1E6;
+    --bg-letter:#808080;
+    --text-contact:#8C8CBA;
+    --bg-scroll:#282843;
+    font-size: 62.5%;
+}
+
+html, body {
+    overflow: hidden;
+}
+
+html, body, input {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--bg-color);
+}
+
+.container {
+    padding: 4rem;
+}
+
+.flex{
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
+} 
+
+header h2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+nav ul {
+    gap: 1.6rem;
+}
+
+nav ul li {
+    font-size: 2.4rem;
+}
+form {
+    margin-top: 2.4rem;
+}
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.input-wrapper {
+    gap: 1rem;
+
+    background-color: var(--bg-input-color);
+    border-radius: .5rem;
+    padding: 1.6rem 2.4rem;
+}
+
+.input-wrapper input {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    outline: 0;
+
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--text-color);
+}
+
+.input-wrapper ion-icon {
+    font-size: 1.6rem;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--text-color);
+}
+
+.input-wrapper:focus-within{
+    outline: .2rem white solid;
+}
+.contacts {
+    flex-direction: column;
+    gap: 5.2rem;
+
+    height: 75vh;
+    overflow-y: scroll;
+}
+.contacts::-webkit-scrollbar{
+    width: .8rem;
+}
+.contacts::-webkit-scrollbar-thumb{
+    background: var(--bg-scroll);
+    border-radius: 99.9rem;
+}
+
+.letter {
+    background-color: var(--bg-letter);
+    width: 4rem;
+    height: 4rem;
+
+    justify-content: center;
+    border-radius: .8rem;
+    margin-right: 5.2rem;
+}
+
+.purple {
+    --bg-letter:#633BBC;
+}
+
+.green {
+    --bg-letter:#07847E;
+}
+.pink {
+    --bg-letter:#9A00B3;
+}
+.blue {
+    --bg-letter:#0088B3;
+}
+.yellow {
+    --bg-letter:#B38C00;
+}
+
+.person {
+    gap: 1.6rem;
+}
+
+.person img {
+    width: 4.8rem;
+    height: 4.8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.person h3, .letter {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+.person p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: var(--text-contact);
+
+    margin-top: .4rem;
+}
+
+.list-wrapper ul {
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+header nav,
+header form,
+.list-wrapper {
+    max-width: 35rem;
+    width: 100%;
+    margin-inline: auto;
+}

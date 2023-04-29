@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>ScrollBar</title>
+</head>
+
+<body>
+    <header class="container">
+        <nav class="flex items-center">
+            <h2>Meus contatos</h2>
+            <ul class="flex items-center">
+                <li><ion-icon name="add"></ion-icon></li>
+                <li><ion-icon name="pencil"></ion-icon></li>
+                <li><ion-icon name="trash"></ion-icon></li>
+            </ul>
+        </nav>
+
+        <form>
+            <div class="input-wrapper flex items-center">
+                <ion-icon name="search-outline"></ion-icon>
+                <label for="filter" class="sr-only">Busque por nome ou por dados de contato</label>
+                <input type="text" id="filter" placeholder="Busque por nome ou por dados de contato...">
+            </div>
+        </form>
+    </header>
+
+    <section class="contacts container flex">
+        <div class="list-wrapper flex">
+            <div class="letter purple flex items-center">A</div>
+
+            <ul class="flex">
+                <li class="person flex">
+                    <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="">
+                    <div class="contact">
+                        <h3>Abraão Senna</h3>
+                        <p>(11) 90876-1234</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="list-wrapper flex">
+            <div class="letter green flex items-center">B</div>
+
+            <ul class="flex">
+                <li class="person flex">
+                    <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="">
+                    <div class="contact">
+                        <h3>Beatriz Clasen</h3>
+                        <p>(48) 90876-1123</p>
+                    </div>
+                </li>
+                <li class="person flex">
+                    <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="">
+                    <div class="contact">
+                        <h3>Brenda Mendes</h3>
+                        <p>(21) 90876-8765</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="list-wrapper flex">
+            <div class="letter pink flex items-center">C</div>
+
+            <ul class="flex">
+                <li class="person flex">
+                    <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="">
+                    <div class="contact">
+                        <h3>Caio Vinícius</h3>
+                        <p>(71) 90876-2435</p>
+                    </div>
+                </li>
+                <li class="person flex">
+                    <img src="https://randomuser.me/api/portraits/men/25.jpg" alt="">
+                    <div class="contact">
+                        <h3>Cleiton Souza</h3>
+                        <p>(11) 90876-1209</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="list-wrapper flex">
+            <div class="letter blue flex items-center">D</div>
+
+            <ul class="flex">
+                <li class="person flex">
+                    <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="">
+                    <div class="contact">
+                        <h3>Daniel Duarte</h3>
+                        <p>(82) 90876-6534</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="list-wrapper flex">
+            <div class="letter yellow flex items-center">E</div>
+
+            <ul class="flex">
+                <li class="person flex">
+                    <img src="https://randomuser.me/api/portraits/men/70.jpg" alt="">
+                    <div class="contact">
+                        <h3>Elias Cornel</h3>
+                        <p>(71) 90864-6484</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--ionIcons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
