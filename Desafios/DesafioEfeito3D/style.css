@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-cards-back: #312d74;
+  --color-card-title: #ece4ef;
+  --color-card-description: #d8cede;
+  --color-card-description-info: #9c83a7;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(102.32deg, #030422 -2.74%, #090114 101.6%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container,
+.cards {
+  display: flex;
+  align-items: center;
+}
+
+.cards-back {
+  width: 34.8rem;
+  height: 48.6rem;
+  background: #121214;
+  box-shadow: 0px 11.3rem 4.5rem rgba(0, 0, 0, 0.02),
+    0px 6.4rem 3.8rem rgba(0, 0, 0, 0.08), 0px 2.8rem 2.8rem rgba(0, 0, 0, 0.13),
+    0px 0.7rem 1.6rem rgba(0, 0, 0, 0.15), 0px 0px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 1.6rem;
+  color: var(--color-cards-back);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards-back h1 {
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+
+  -webkit-text-stroke: 1px;
+  -webkit-text-fill-color: transparent;
+}
+
+.cards-back:first-child {
+  background-image: url(./assets/bg-card-left.png);
+}
+.cards-back:last-child {
+  background-image: url(./assets/bg-card-right.png);
+}
+
+.card {
+  background: url(./assets/cardFront/bg-card-front.png) no-repeat;
+  width: 43.6rem;
+  height: 60.8rem;
+  border-radius: 2rem;
+
+  box-shadow: 0px 29.4rem 11.8rem rgba(0, 0, 0, 0.03),
+    0px 16.5rem 9.9rem rgba(0, 0, 0, 0.1), 0px 7.3rem 7.3rem rgba(0, 0, 0, 0.17),
+    0px 1.8rem 4rem rgba(0, 0, 0, 0.2), 0px 0px 0px rgba(0, 0, 0, 0.2);
+
+  position: relative;
+}
+
+.card-info {
+  padding: 4.8rem 12rem 6rem 4rem;
+}
+.card-info header {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 300px;
+  margin-bottom: 6rem;
+}
+
+.card-info h2 {
+  color: var(--color-card-title);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4rem;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.4);
+}
+
+.card-info span {
+  color: var(--color-card-description-info);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+}
+
+.character {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 200px;
+}
+
+main .info h4 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 130%;
+
+  color: var(--color-card-description);
+}
+main .info span {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--color-card-description-info);
+}
