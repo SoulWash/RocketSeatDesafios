@@ -38,6 +38,7 @@ Projetos e disafios propostos pela plataforma da RocketSeat para melhoria da cap
 <a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/HRecipes" target="_black">Healthy Recipes</a><br>
 <a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/DesafioPlanos" target="_black">Pricing Table</a><br>
 <a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/DesafioRocketNFTs" target="_black">Rocket NFTs</a><br>
+<a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/NLWSpaceTime" target="_black">NLW Space Time - Cápsula do tempo</a><br>
 
 ## :memo: Licença
 
