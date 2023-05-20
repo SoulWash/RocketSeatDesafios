@@ -90,6 +90,7 @@ nav img {
 }
 
 nav img {
+  object-position: top center;
   object-fit: cover;
   transition: all .3s ease-in-out;
   border: 2px solid transparent;
