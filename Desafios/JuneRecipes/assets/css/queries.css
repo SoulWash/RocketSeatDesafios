@@ -1,0 +1,13 @@
+@media (max-width:780px) {
+    body {
+        overflow: scroll;
+    }
+    
+    .top {
+        flex-direction: column;
+    }
+
+    .bottom {
+        flex-direction: column;
+    }
+}

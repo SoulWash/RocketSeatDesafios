@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+:root {
+    font-size: 62.5%;
+
+    --color-1:#FEECE0;
+    --color-2:#58190A;
+    --color-3:#9B6647;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-1);
+    overflow: hidden;
+    font-family: 'Source Serif 4', serif;
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.6rem;
+
+    margin: 11.2rem clamp(10rem,5vw + 1rem,18rem) 5.6rem clamp(10rem,5vw + 1rem,18rem);
+}
+
+picture img{
+    width: 40.9rem;
+    height: 29.3rem;
+}
+
+.info h1 {
+    font-size: clamp(4.2rem,5vw + .5rem,7.2rem);
+    color: var(--color-2);
+
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.485);
+}
+
+.info p {
+    font-size: clamp(2rem,2vw + .8rem,3.8rem);
+    color: var(--color-2);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons, 
+span,
+.buttons p{
+    font-size: clamp(2.1rem,2vw + .6rem,3.5rem);
+    color: var(--color-3);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    transition: all 300ms ease-in-out;
+}
+
+button:hover {
+    scale: 1.2;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: clamp(3rem,5vw + 1rem,6.4rem);
+    height: 100vh;
+    background-color: var(--color-3);
+    
+    padding: 6.4rem 5rem;
+    color: var(--color-1);
+}
+
+ul,
+ol {
+    padding-left: 2.8rem;
+}
+
+li {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: clamp(1.8rem,2vw + .5rem,2.8rem);
+}
+
+.col1 > div,
+.col2 > div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.col1 h1,
+.col2 h1 {
+    font-size: clamp(2rem,2vw + .8rem,3.8rem);
+}
