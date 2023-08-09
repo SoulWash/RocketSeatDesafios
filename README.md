@@ -40,6 +40,7 @@ Projetos e disafios propostos pela plataforma da RocketSeat para melhoria da cap
 <a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/DesafioRocketNFTs" target="_black">Rocket NFTs</a><br>
 <a href="https://soulwash.github.io/RocketSeatDesafios/Projetos/NLWSpaceTime" target="_black">NLW Space Time - Cápsula do tempo</a><br>
 <a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/MovieIA" target="_black">Movie API</a><br>
+<a href="https://soulwash.github.io/RocketSeatDesafios/Desafios/GoogleUIClone" target="_black">Google UI Clone</a><br>
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT.
