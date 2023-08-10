@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <link rel="shortcut icon" href="./assets/img/circle-frame.svg" type="image/svg">
+    <meta name="description"
+        content="UI Clone of google, homepage a bit similar to google. Made with HTML and CSS.">
     <title>Google UI Clone</title>
 </head>
+
 <body>
     <header class="menu">
-        <section class="menu_section left">
-            <img src="./assets/img/burger-icon.svg" alt="Icone Burger" class="menu_icon">
+        <section class="menu_section left" role="navigation">
+            <img src="./assets/img/burger-icon.svg" alt="Icone Burger" class="menu_icon" tabindex="1">
             <a href="#" class="menu_link active">All</a>
             <a href="#" class="menu_link">Imagens</a>
         </section>
         <section class="menu_section right">
-            <img src="./assets/img/more-icon.svg" alt="More Icon" class="menu_icon">
+            <img src="./assets/img/more-icon.svg" alt="More Icon" class="menu_icon" tabindex="0">
             <div class="menu_profile">
-                <img src="./assets/img/circle-frame.svg" alt="circle frame" class="menu_avatar--frame" >
+                <img src="./assets/img/circle-frame.svg" alt="circle frame" class="menu_avatar--frame" tabindex="0">
                 <img src="https://randomuser.me/api/portraits/lego/2.jpg" alt="Avatar Picture" class="menu_avatar">
             </div>
         </section>
@@ -26,10 +31,14 @@
         <img src="./assets/img/logo.svg" alt="Logo da UI clone" class="content_logo">
 
         <form class="form">
-            <input type="text" class="content_search">
+            <div class="input-wrapper">
+                <label for="pesq">Do your research here</label>
+                <input id="pesq" name="pesq" type="text" class="content_search" role="form"
+                    placeholder="Search here...">
+            </div>
             <div class="content_buttons">
-                <button class="button">Pesquisa UI Clone</button>
-                <button class="button">Estou com Azar</button>
+                <button class="button" role="button">Search UI Clone</button>
+                <button class="button" role="button">I'm unlucky</button>
             </div>
         </form>
 
@@ -44,13 +53,13 @@
             <span>Brazil</span>
         </section>
         <section class="footer_section footer_links">
-            <div class="links_left">
+            <div class="links_left" role="navigation">
                 <a href="#">About</a>
                 <a href="#">Publicity</a>
                 <a href="#">Business</a>
                 <a href="#">How Search works</a>
             </div>
-            <div class="links_right">
+            <div class="links_right" role="navigation">
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>
                 <a href="#">Settings</a>
@@ -58,4 +67,5 @@
         </section>
     </footer>
 </body>
+
 </html>

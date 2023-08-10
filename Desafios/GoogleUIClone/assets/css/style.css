@@ -44,10 +44,11 @@ body {
 }
 
 .menu_section.right {
-    margin-right: 4px;
+    margin-right:4px;
 }
 .menu_section.right .menu_icon {
     padding: 12px;
+    margin-right: 10px;
 }
 
 .menu_link {
@@ -80,8 +81,10 @@ body {
 }
 .menu_avatar--frame {
     position: absolute;
-    top: 0;
+    top: 2px;
     right: 10px;
+
+    animation: Rotate 1s infinite forwards linear;
 }
 
 .content {
@@ -95,6 +98,8 @@ body {
 
 .content_logo {
     height: clamp(56px,10vw + 20px,150px);
+
+    animation: appear .7s backwards ease-in;
 }
 
 .form {
@@ -102,6 +107,14 @@ body {
     flex-direction: column;
     max-width: 736px;
     width: 100%;
+    position: relative;
+}
+
+label {
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    position: absolute;
 }
 
 .content_search {
@@ -172,12 +185,10 @@ body {
     padding: 10px 12px;
 }
 
-.footer_section.footer_location  span{
+.footer_section.footer_location span{
     font-size: 16px;
     color: rgba(0, 0, 0, 0.548);
 }
-
-
 
 .footer_section:not(:first-child){
     border-top: 1px solid #e4e4e4;
@@ -193,9 +204,12 @@ body {
     padding: 10px;
 }
 
+.footer_links a {
+    color: rgb(75, 74, 74);
+}
+
 .footer_links a:not(:first-child) {
     margin-left: 27px;
-
 }
 
 
@@ -203,5 +217,26 @@ body {
 @media screen and (min-width: 530px) {
     .footer_links {
         justify-content: space-between;
+    }
+
+    .menu {
+        justify-content: end;
+    }
+    .menu_section.left .menu_icon  {
+        display: none;
+    }
+}
+
+@keyframes Rotate {
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes appear {
+
+    from {
+        scale: 0.6;
+        opacity: 0;
     }
 }
